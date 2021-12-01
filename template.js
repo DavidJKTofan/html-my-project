@@ -32,7 +32,7 @@ const template = cf => {
           <div class="container">
             <h1>Hello there! You're connecting from ${cf.city} in ${cf.country} ${emoji}</h1>
             <br>
-            <p>Cloudflare offers us "<a rel="nofollow noreferrer external" href="https://developers.cloudflare.com/workers/runtime-apis/request#incomingrequestcfproperties" target="_blank" >IncomingRequestCfProperties</a>" which we can use to show edge information, such as from which ASN ${cf.asOrganization} – ${cf.asn} – you are connecting from.</p>
+            <p>Cloudflare offers us "<a rel="nofollow noreferrer external" href="https://developers.cloudflare.com/workers/runtime-apis/request#incomingrequestcfproperties" target="_blank" >IncomingRequestCfProperties</a>" which we can use to show edge information, <br>such as from which ASN you are connecting from: <b>${cf.asOrganization}</b> – <i>${cf.asn}</i>.</p>
           </div>
         </body>
       </html>
